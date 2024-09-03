@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 5rem;
+  z-index: 10;
+}
+
+/* .form_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  opacity: 70%;
+  height: auto;
+  width: auto;
+  border: 2px solid #264143;
+  border-radius: 20px;
+  box-shadow: 3px 4px 0px 1px #507562;
+} */
+
+.form_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(95, 95, 95, 0.15); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
+  height: auto;
+  width: auto;
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
+  border-radius: 20px;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+  padding: 20px;
+}
+
+
+.title {
+  color: #c3dec8;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.sub_title {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+label{
+  color: rgb(221, 239, 229);
+}
+
+.haveAcc{
+  color: whitesmoke;
+}
+
+.haveAcc a{
+  color: #73a1a4;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 10px;
+}
+
+.form_style {
+  outline: none;
+  border: 2px solid #264143;
+  box-shadow: 3px 4px 0px 1px #507562;
+  width: 290px;
+  padding: 12px 10px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.form_style:focus, .btn:focus {
+  transform: translateY(4px);
+  box-shadow: 1px 2px 0px 0px #507562;
+}
+
+.btn {
+  padding: 15px;
+  margin: 25px 0px;
+  width: 290px;
+  font-size: 15px;
+  background: #d3d3d3;
+  border-radius: 10px;
+  font-weight: 800;
+  box-shadow: 3px 3px 0px 0px #507562;
+}
+
+.btn:hover {
+  opacity: .9;
+  cursor: pointer;
+}
+
+.link {
+  font-weight: 800;
+  color: #73a1a4;
+  padding: 5px;
+}
+
+.parent {
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.parent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/leaves.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  z-index: -1;
+}
