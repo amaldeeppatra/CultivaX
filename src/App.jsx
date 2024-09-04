@@ -4,6 +4,7 @@ import { createBrowserRouter,Outlet,RouterProvider } from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
 import Login from './components/login/Login'
 import Signup from './components/login/Signup'
+import Dashboard from './components/dashboard/Dashboard'
 
 
 const App=()=>{
@@ -28,6 +29,10 @@ const appRouter=createBrowserRouter(
               {
                 path:"/signup",
                 element:[<Signup/>]
+              },
+              {
+                path:"/dashboard",
+                element:[<Dashboard/>]
               }
           ]
       }
