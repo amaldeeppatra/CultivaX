@@ -1,0 +1,17 @@
+.news {
+    font-size: 2rem;
+    padding: 1rem;
+    /* margin-top: 3rem; */
+    /* text-align: center; */
+    margin-top: 0;
+  }
+  
+  .news-card-container {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+    /* padding: 20px; */
+    margin-top: -6rem;
+  }
+  

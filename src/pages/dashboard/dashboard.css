@@ -3,21 +3,28 @@
     height: 100vh;
 }
 
+body{
+    background-color: #99B8A8;
+}
+
 /* Left sidebar styles */
 .sidebar {
-    background-color: #f8f9fa;
-    width: 250px;
+    background-color: #d3d3d3; /* Lighter gray for sidebar */
+    width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2); /* Darker shadow, more blur */
+    z-index: 1; /* Ensure the sidebar is on top */
+    border-radius: 0 25px 25px 0;
 }
 
 /* Logo style */
 .logo {
     text-align: center;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 /* Button group style */
@@ -34,6 +41,32 @@
 
 /* Main content area */
 .main-content {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     padding: 20px;
+    background-color: #99B8A8;
+    margin-left: 2.5rem;
+}
+
+.cultivaxLogo{
+    width: 65%;
+}
+
+.sidebar-element{
+    font-size: 4rem;
+    text-align: center;
+    color: #99B8A8;
+    margin-top: 1rem;
+}
+
+.logout{
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(207, 59, 59);
+    margin-top: 3rem;
+}
+
+.welcome{
+    padding: 1rem;
+    font-size: 3rem;
+    color: #44514a;
 }

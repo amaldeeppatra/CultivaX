@@ -1,0 +1,61 @@
+.news-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px; /* Reduced width */
+  overflow: hidden;
+  margin: 10px; /* Reduced margin */
+  transition: transform 0.3s;
+}
+
+/* Hover effect */
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* News image */
+.news-image {
+  width: 100%;
+  height: 150px; /* Reduced height */
+  object-fit: cover;
+}
+
+/* News content */
+.news-content {
+  padding: 15px; /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Reduced gap */
+}
+
+/* Headline styling */
+.news-title {
+  font-size: 1.2rem; /* Reduced font size */
+  margin: 0;
+  color: #333;
+}
+
+/* Summary styling */
+.news-summary {
+  font-size: 0.9rem; /* Reduced font size */
+  color: #555;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Read More button styling */
+.read-more {
+  align-self: flex-start;
+  margin-top: 5px; /* Reduced margin */
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.read-more:hover {
+  color: #0056b3;
+}
