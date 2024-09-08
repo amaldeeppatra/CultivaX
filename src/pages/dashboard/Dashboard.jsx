@@ -1,29 +1,32 @@
-import React from 'react'
-// import { Link } from 'react-router-dom';
-import './dashboard.css'
-// import cultivaxLogo from '../../assets/logo-circular.png'
-// import { MdOutlineDataExploration } from "react-icons/md";
-// import { BsFillCloudSunFill } from "react-icons/bs";
-// import { MdNewspaper } from "react-icons/md";
-// import { TbLogout } from "react-icons/tb";
+import React, { useEffect, useState } from 'react';
+import './dashboard.css';
 import UploadImage from '../../components/dashboard/UploadImage';
 import News from '../../components/dashboard/News';
 import Sidebar from '../../components/dashboard/Sidebar';
 
 const Dashboard = () => {
+  const [userName, setUserName] = useState('');
+
+  useEffect(() => {
+    // Retrieve fullName from localStorage
+    const fullName = localStorage.getItem('fullName');
+    if (fullName) {
+      setUserName(fullName);
+    }
+  }, []);
+
   return (
     <>
-    <div class="layout">
-        <Sidebar/>
-
-        <main class="main-content">
-            <h1 className='welcome'>Welcome USER to CultivaX</h1>
-            <UploadImage/>
-            <News/>
+      <div className="layout">
+        <Sidebar />
+        <main className="main-content">
+          <h1 className="welcome">Welcome {userName ? userName : 'USER'} to CultivaX</h1>
+          <UploadImage />
+          <News />
         </main>
-    </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;

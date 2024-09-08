@@ -40,7 +40,7 @@
     /* flex-grow: 1; */
     padding: 20px;
     background-color: #99B8A8;
-    margin-left: 2.5rem;
+    /* margin-left: 2.5rem; */
 }
 
 .cultivaxLogo{
@@ -66,6 +66,7 @@
     padding: 1rem;
     font-size: 3rem;
     color: #44514a;
+    margin-bottom: 15px;
 }
 
 .sidebar-element:hover{

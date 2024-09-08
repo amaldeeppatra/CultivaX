@@ -20,7 +20,7 @@ const Sidebar = () => {
             <Link className='sidebar-element' to="/past-analyses"><MdNewspaper /></Link>
         </div>
 
-        <Link className='logout'><TbLogout /></Link>
+        <Link className='logout' to='/'><TbLogout /></Link>
     </aside>
   )
 }
