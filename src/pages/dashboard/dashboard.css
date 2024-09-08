@@ -3,10 +3,6 @@
     height: 100vh;
 }
 
-body{
-    background-color: #99B8A8;
-}
-
 /* Left sidebar styles */
 .sidebar {
     background-color: #d3d3d3; /* Lighter gray for sidebar */
@@ -56,6 +52,7 @@ body{
     text-align: center;
     color: #99B8A8;
     margin-top: 1rem;
+    transition: all 0.3s ease;
 }
 
 .logout{
@@ -69,4 +66,14 @@ body{
     padding: 1rem;
     font-size: 3rem;
     color: #44514a;
+}
+
+.sidebar-element:hover{
+    transition: all 0.3s ease;
+    translate: 10px;
+}
+
+.logo:hover{
+    transition: all 0.4s ease;
+    transform: scale(1.1);
 }

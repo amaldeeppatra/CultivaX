@@ -5,6 +5,9 @@ import ReactDOM from 'react-dom/client'
 import Login from './components/login/Login'
 import Signup from './components/login/Signup'
 import Dashboard from './pages/dashboard/Dashboard'
+import AnalysisResults from './pages/analysisResults/AnalysisResults'
+import PastAnalyses from './pages/pastAnalyses/PastAnalyses'
+import Weather from './pages/weather/Weather'
 
 
 const App=()=>{
@@ -33,6 +36,18 @@ const appRouter=createBrowserRouter(
               {
                 path:"/dashboard",
                 element:[<Dashboard/>]
+              },
+              {
+                path:"/results",
+                element:[<AnalysisResults/>]
+              },
+              {
+                path:"/past-analyses",
+                element:[<PastAnalyses/>]
+              },
+              {
+                path:"/weather",
+                element:[<Weather/>]
               }
           ]
       }

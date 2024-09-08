@@ -1,0 +1,83 @@
+/* analysisresults.css */
+
+/* Ensure the main layout uses flexbox */
+.layout {
+    display: flex;
+    height: 100vh;
+    background-color: #99B8A8; /* Match the background color of the body */
+}
+
+/* Main content area styles */
+.main-content {
+    flex-grow: 1; /* Take up the remaining space */
+    padding: 20px;
+    background-color: #99B8A8; /* Light green background color */
+    /* margin-left: 150px; Ensure content starts after the sidebar */
+    overflow-y: auto; /* Allows scrolling if content overflows */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content horizontally */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2rem;
+    color: #333; /* Dark color for better readability */
+    margin-bottom: 20px;
+}
+
+/* Tiles container and tile styling */
+.tiles-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure the tiles span the full width of the container */
+    justify-content: center; /* Center the tiles horizontally */
+}
+
+.tile {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 200px; /* Limit the width of each tile */
+}
+
+/* Status styles */
+.status {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.status.positive {
+    color: green;
+}
+
+.status.negative {
+    color: red;
+}
+
+.status.neutral {
+    color: orange;
+}
+
+/* Button styles */
+.view-details-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Space above the button */
+    font-size: 1rem; /* Slightly larger font size for better readability */
+}
+
+.view-details-btn:hover {
+    background-color: #0056b3;
+}
+
+

@@ -7,11 +7,12 @@
   }
   
   .news-card-container {
-    display: flex;
+    display: flex;  
     gap: 20px; /* Space between cards */
     justify-content: center; /* Center the cards horizontally */
     flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
     /* padding: 20px; */
     margin-top: -6rem;
+    flex-wrap: nowrap;
   }
   
